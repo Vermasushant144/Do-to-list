@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 35%;
+            width: 640px;
+            background-color: black;
+            position: absolute;
+            margin: auto;
+            top: 50px;
+            left: 0;
+            right: 0;
+            padding: 30px 0;
+            border-radius: 8px;
+        }
+        #newtask{
+            position: relative;
+            padding: 30px 0;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        #newtask input{
+            position: relative;
+            border-radius: 8px;
+            width: 70%;
+            height: 45px;
+            font-size: 20px;
+            border: 3px solid rgb(22, 159, 250);
+            padding: 20px;
+            margin-left: 12px;
+            color: black;
+            font-weight: 500;
+
+        }
+        #newtask  button{
+            position: relative;
+            width: 60px;
+            height: 45px;
+            float: right;
+            margin-right: 30px;
+            font-weight: 500;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+            background: #19a;
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+        #task{
+            width: 100%;
+            position: relative;
+            margin-top: 40px;
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 5px;
+        }
+        .task{
+            background: #fff;
+            height: 50px;
+            padding: 0px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            border-bottom: 2px solid #fff;
+        }
+        .task span{
+            font-size: 30px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .task button{
+            border: none;
+            background: #19a681;
+            height: 100%;
+            width: 200px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .completed{
+
+
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <div id="newtask">
+        <input type="text" placeholder="Task to be done..">
+        <button id="push">Add</button>
+    </div>
+    <div id="tasks"></div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
